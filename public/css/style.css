@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  font-family: sans-serif;
+  padding-top: 2vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: normal;
+  min-height: 100vh;
+  /* overflow: hidden; */
+  background-size: cover;
+  background-position: top;
+  background-image: url("https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  /*https://unsplash.com/photos/wQLAGv4_OYs */
+}
+
+input {
+  /* background-color: #36096d; */
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  min-width: 30vh;
+
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+input::placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+input:focus {
+  outline: none;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-list main {
+  margin: 1rem;
+}
+
+.card {
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-sizing: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  min-width: 400px;
+  max-width: 78vh;
+  height: 30vh;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.avatar {
+  border: 3px solid;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.fol-img {
+  border: 1px solid black;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  margin: 0.3rem;
+}
+
+.user-info {
+  color: white;
+  margin-left: 2rem;
+}
+
+.user-info h1 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+  list-style-type: none;
+}
+
+.user-info ul li {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.repo-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.repos {
+  display: flex;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+  /* srf */
+  align-items: center;
+}
+
+.reposLang {
+  display: block;
+  color: white;
+  font-size: 0.6rem;
+  position: relative;
+  margin-top: 5px;
+}
+/* Followers Card css */
+
+.fol-title-block h1 {
+  margin-top: -5px;
+  color: white;
+  /* display: block; */
+  /* position: relative; */
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid rgb(255, 255, 255);
+}
+
+.repos ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.repos ul li {
+  margin-right: 1rem;
+  padding: 5px;
+  display: flex;
+  background-color: rgb(92, 92, 92);
+  border-radius: 5px;
+  font-size: 1rem;
+  /* justify-content: space-around; */
+}
+.repos ul li strong {
+  margin-left: 10px;
+}
+
+/* .wa-st-fo li {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+a {
+  color: inherit;
+}
