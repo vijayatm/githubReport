@@ -8,7 +8,7 @@ const followersCard = document.getElementById('followers');
 const repoCard = document.getElementById('repositories');
 
 
-// getUser('naveenanimation20');
+getUser('naveenanimation20');
 
 
 async function getUser(username){
