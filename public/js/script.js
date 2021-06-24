@@ -156,6 +156,10 @@ async function getReposAddToCard_Repositories(username){
    
 }
 
+function parseDate(date){
+    return new Date(date).toLocaleString();
+}
+
 function addNameTimeLangToCard(repo){
     const nameTimeLangHTML = document.createElement('div');
         
@@ -166,7 +170,7 @@ function addNameTimeLangToCard(repo){
 
     const timeCreateHTML = document.createElement('span');
     timeCreateHTML.classList.add('repoCreTime');
-    timeCreateHTML.innerHTML = repo.created_at;
+    timeCreateHTML.innerHTML = parseDate(repo.created_at);
     nameTimeLangHTML.appendChild(timeCreateHTML);
 
     const langCont = document.createElement('h3');
