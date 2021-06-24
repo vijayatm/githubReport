@@ -184,7 +184,7 @@ function addNameTimeLangToCard(repo){
 
     return nameTimeLangHTML;
 }
-
+//srg
 function addWatchStarForkToCard(repo){
     const threeLists = document.createElement('div');
         const ulItems = document.createElement('ul');
